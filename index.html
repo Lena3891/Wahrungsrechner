@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Währungsrechner</title>
 </head>
 <body>
+    <div class="navbar">
+        <img src="img/menu.png" alt="Menü">
+        Währungsrechner
+    </div>
+
     
+    <div class="input-container">
+        <img class="flag" src="img/europe-151606_640.png" alt="Europa Flagge">
+        <input value="100" id="eurofield" type="text">
+        <span class="currency">EUR</span>
+    </div>
+
+    <div class="container-center">
+        <img src="img/change.png" alt="Wechsel Icon">
+    </div>
+
+    <div class="input-container">
+        <img class="flag" src="img/american-flag-2043285_640.png" alt="USA Flagge">
+        <input type="text" id="usd">
+        <span class="currency">USD</span>
+        </div>
+    <div class="container-center">
+        <button onclick="calc()">Berechne USD</button>
+        <button onclick="calcReverse()">Berechne EUR</button>
+        </div>
+    </div>
+  <script src="script.js"></script>
 </body>
 </html>
